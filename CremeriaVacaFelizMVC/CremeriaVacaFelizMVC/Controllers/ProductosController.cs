@@ -36,6 +36,7 @@ namespace CremeriaVacaFelizMVC.Controllers
             return View(producto);
         }
 
+        [Authorize]
         // GET: Productos/Create
         public ActionResult Create()
         {
@@ -61,6 +62,7 @@ namespace CremeriaVacaFelizMVC.Controllers
             return View(producto);
         }
 
+        [Authorize]
         // GET: Productos/Edit/5
         public ActionResult Edit(int? id)
         {
@@ -93,7 +95,7 @@ namespace CremeriaVacaFelizMVC.Controllers
             ViewBag.CatCategoria = new SelectList(db.Categorias, "Id", "StrValor", producto.CatCategoria);
             return View(producto);
         }
-
+        [Authorize]
         // GET: Productos/Delete/5
         public ActionResult Delete(int? id)
         {

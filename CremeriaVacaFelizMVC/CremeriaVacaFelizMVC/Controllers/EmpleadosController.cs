@@ -14,6 +14,7 @@ namespace CremeriaVacaFelizMVC.Controllers
     {
         private CremeriaModel db = new CremeriaModel();
 
+        [Authorize]
         // GET: Empleados
         public ActionResult Index()
         {

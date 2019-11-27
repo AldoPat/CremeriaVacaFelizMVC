@@ -29,6 +29,7 @@ namespace CremeriaVacaFelizMVC.Models
         public int CatCategoria { get; set; }
 
         public decimal Peso { get; set; }
+        [Required]
 
         public decimal Precio { get; set; }
 
